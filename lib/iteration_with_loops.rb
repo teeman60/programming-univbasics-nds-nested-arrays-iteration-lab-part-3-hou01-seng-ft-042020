@@ -7,12 +7,12 @@ def join_nested_strings(src)
     column = 0
     while column < src[row].length do
       if src[row][column] == src[row][column].to_s
-        string += src[row][column]
+        string += src[row][column] + " "
       end
       column += 1
     end
     row += 1
   end
 
-  string.join(" ")
+  string
 end
